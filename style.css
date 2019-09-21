@@ -1,0 +1,46 @@
+html{
+  font-family: 'Roboto', sans-serif;
+  
+}
+head{
+  margin: 0px;
+}
+body{
+  font-family: 'Neucha', cursive;
+  color: black;
+  margin: 0px;
+  font-size:50px;
+  background-image: url("mine.jpg");
+  background-repeat: no-repeat;
+   background-position: center;
+}
+
+
+
+/* Middle column */
+#midcont {
+text-align: center;
+}
+#leftcont{
+  background-color: black;
+  height: 100%;
+}
+#rightcont{
+  background-color: black;
+  height: 100%;
+}
+.hoverbutton{
+  cursor: pointer;
+}
+#consoletxt{
+  cursor: pointer;
+  width: 201px;
+  height: 41px;
+}
+#input{
+  width: 201px;
+  height: 50px;
+}
+li{
+  font-size: 25px;
+}
