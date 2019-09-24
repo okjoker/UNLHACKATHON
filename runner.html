@@ -1,0 +1,93 @@
+<html>
+<head>
+  <script>
+  var sheks = 0; //Currency
+  var critchance = 0; //Chance to get extra money
+  var woodenpickaxe = false; //not yet implemented
+  var steelpickaxe = false; // different pickaxe
+  var titaniumpickaxe = false;
+  var diamondpickaxe = false; //not yet implemented
+  var onyxpickaxe = false;
+  var prestigeValue = 0;
+  var prestigeLevel = 0;
+  var miners = 0; //Amount of miners
+  var x = 1;
+  var z = 1*(prestigeLevel+1);
+  var spans = document.createElement("SPAN");
+  var textnode = document.createTextNode("test");
+  function start(){
+    document.getElementById("numofsheks").innerHTML = "Number of Dollars: 0";
+  }
+</script>
+<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "jqscript.js"></script>
+<script src = "store.js"></script>
+<script src = "script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="start()">
+
+  <div class = "container-fluid">
+    <div class = "row">
+      <div class="col-md-12" id="midcont">
+        <span id = "numofsheks"></span>
+
+        <br/>
+        <span id = "test" class = "content"></span>
+        <br/>
+        <img src="button_sell-rocks.png" id="in" class="hoverbutton" onclick="clicks()">
+
+
+      </br>
+      <ul>Store</ul>
+        <div class="row">
+          <div class="col-sm-4">
+            <li style="list-style:none;"><img src="Wooden_Pickaxe.png" id="getpick" class="hoverbutton" onclick = "buyWoodenPick()" style = "height:auto;width:30%;">
+              <ul id="twohun" style="list-style: none;">200</ul>
+              </li>
+              <li style="list-style:none;"><img src="Diamond_Pickaxe.png" id="getpickfour" class="hoverbutton" onclick = "buyDiamondPick()" style = "height:auto;width:30%;"><ul id="tentho" style="list-style: none;">10,000</ul></li>
+          </div>
+          <div class="col-sm-4">
+            <li style="list-style:none;">
+            <img src="Steel_Pickaxe.png" id="getpicktwo" class="hoverbutton" onclick = "buySteelPick()" style = "height:auto;width:30%;"><ul id="fivehun" style="list-style: none;">500</ul></li>
+
+          <li style="list-style:none;">
+            <img src="Onyx_Pickaxe.png" id="getpickfive" class="hoverbutton" onclick = "buyOnyxPick()" style = "height:auto;width:30%;">
+          <ul id="twofif" style="list-style: none;">250,000</ul>
+        </li>
+          </div>
+          <div class="col-sm-4">
+            <li style="list-style:none;"><img src="Titanium_Pickaxe.png" id="getpickthree" class="hoverbutton" onclick = "buyTitaniumPick()" style = "height:auto;width:30%;">
+              <ul id="onetho" style="list-style: none;">1,000</ul></li>
+              <li style="list-style:none;">
+                    <img src="Miner.png" id="getminer" class="hoverbutton" onclick = "buyMiners()" style = "height:auto;width:30%;">
+                    <ul id="fivehun" style="list-style: none;">500</ul>
+                  </li>
+
+        </div>
+      </div>
+
+      <img src="button_prestige.png" id="prestige" class="hoverbutton" onclick = "prestige()">
+
+    </br>
+    <span id = "test" class = "content"></span>
+
+    <span id = "feedback" class = "content"></span>
+    <br>
+    <input type="text" id="input">
+    <img src="button_enter-command.png" id="consoletxt" value="Enter Command" onclick="Commands()">
+
+</div>
+</div>
+</div>
+<span hidden = "true" id="Guy">
+  <img src="fieri.jpg" style ="height:100%;width:100%;">
+</span>
+</body>
+<span hidden = "true" id="Villager">
+  <img src="Villager.png">
+</span>
+</html>
